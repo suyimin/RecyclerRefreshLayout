@@ -37,7 +37,7 @@
 #### 在xml中配置
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<com.dinuscxj.refresh.RecyclerRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RecyclerRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
  android:id="@+id/refresh_layout"
  android:layout_width="match_parent"
  android:layout_height="match_parent">
@@ -45,7 +45,7 @@
      android:id="@+id/recycler_view"
      android:layout_width="match_parent"
      android:layout_height="match_parent" />
-</app.dinus.com.refresh.RecyclerRefreshLayout>
+</app.dinus.com.com.xdroid.refresh.RecyclerRefreshLayout>
 ```
  
 #### 配置下面的属性(* 必选)
@@ -127,7 +127,7 @@ void pullProgress(float pullDistance, float pullProgress);
 ```java 
 RecyclerRefreshLayout.setRefreshView(View, LayoutParams);
 ```
-例如. [RefreshView](https://github.com/dinuscxj/RecyclerRefreshLayout/blob/master/recyclerrefreshlayout/src/main/java/com/dinuscxj/refresh/RefreshView.java) or [RefreshViewEg](https://github.com/dinuscxj/RecyclerRefreshLayout/tree/master/app/src/main/java/com/dinuscxj/example/demo/RefreshViewEg.java) 
+例如. [RefreshView](https://github.com/dinuscxj/RecyclerRefreshLayout/blob/master/recyclerrefreshlayout/src/main/java/com/dinuscxj/com.xdroid.refresh/RefreshView.java) or [RefreshViewEg](https://github.com/dinuscxj/RecyclerRefreshLayout/tree/master/app/src/main/java/com/dinuscxj/example/demo/RefreshViewEg.java)
 
 为 `RecyclerRefreshLayout` 定义拖动距离的转换器（需要实现 `IDragDistanceConverter`） 
 ```java
@@ -143,7 +143,7 @@ public interface IDragDistanceConverter {
 ```java
 RecyclerRefreshLayout.setDragDistanceConverter(@NonNull IDragDistanceConverter) 
 ```
-例如. [MaterialDragDistanceConverter](https://github.com/dinuscxj/RecyclerRefreshLayout/blob/master/recyclerrefreshlayout/src/main/java/com/dinuscxj/refresh/MaterialDragDistanceConverter.java) or [DragDistanceConverterEg](https://github.com/dinuscxj/RecyclerRefreshLayout/tree/master/app/src/main/java/com/dinuscxj/example/demo/DragDistanceConverterEg.java) 
+例如. [MaterialDragDistanceConverter](https://github.com/dinuscxj/RecyclerRefreshLayout/blob/master/recyclerrefreshlayout/src/main/java/com/dinuscxj/com.xdroid.refresh/MaterialDragDistanceConverter.java) or [DragDistanceConverterEg](https://github.com/dinuscxj/RecyclerRefreshLayout/tree/master/app/src/main/java/com/dinuscxj/example/demo/DragDistanceConverterEg.java)
 
 ## 杂谈
 
