@@ -150,8 +150,9 @@ public abstract class TabPagerFragment extends Fragment {
         private ArrayList<TabInfo> tabs = new ArrayList<>();
 
         protected TabPagerAdapter build() {
-            if (tabs == null)
+            if (tabs == null) {
                 throw new IllegalStateException("This builder should not be reused");
+            }
             TabPagerAdapter adapter = new TabPagerAdapter(tabs);
             tabs = null;
             return adapter;

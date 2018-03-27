@@ -21,14 +21,14 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 import com.xdroid.example.R;
 import com.xdroid.example.adapter.RecyclerListAdapter;
 import com.xdroid.example.model.OpenProjectFactory;
 import com.xdroid.example.model.OpenProjectModel;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class OpenProjectNormalFragment extends RecyclerFragment<OpenProjectModel> {
     private static final int SIMULATE_UNSPECIFIED = 0;
@@ -91,7 +91,7 @@ public class OpenProjectNormalFragment extends RecyclerFragment<OpenProjectModel
         getHeaderAdapter().notifyDataSetChanged();
 
         getRecyclerRefreshLayout().setDragDistanceConverter(
-            new ResistanceDragDistanceConvert(getScreenHeight(getActivity())));
+                new ResistanceDragDistanceConvert(getScreenHeight(getActivity())));
     }
 
     private static int getScreenHeight(Context context) {
